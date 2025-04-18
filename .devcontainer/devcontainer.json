@@ -9,7 +9,7 @@
 	},
 	"mounts": [
 		"type=bind,source=${localEnv:HOME}/.ssh,target=/root/.ssh,readonly",
-		"type=bind,source=directory_path_where_you_want_your_output_file,target=/workspaces/github-repo-lister/output"
+		"type=bind,source=${localEnv:ONEDRIVE}/docs/second-brain/2. Areas/Software,target=/workspaces/github-repo-lister/output"
 	],
 
 	// Features to add to the dev container. More info: https://containers.dev/features.

@@ -116,7 +116,9 @@ if __name__ == "__main__":
     logger.info("DataFrame created successfully.")
 
     # Save to CSV
-    output_path = "output/github_repos.csv"
-    logger.info(f"Saving repository data to CSV: {output_path}")
-    df.to_csv(output_path, index=False)
+    output_path = "output/github_repos"
+    logger.info(f"Saving repository data to CSV: {output_path}.csv")
+    df.to_csv(output_path + ".csv", index=False)
+    logger.info(f"Saving repository data to Markdown: {output_path}.md")
+    df.to_markdown(output_path + ".md", index=False)
     logger.info("Repository data saved successfully.")
